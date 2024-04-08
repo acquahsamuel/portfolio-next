@@ -8,6 +8,11 @@ export default function Home() {
           <div className="main-container">
              {/* <HomePage /> */}
              <Header />
+
+             <div>
+                Tell me stories 
+             </div>
+
           </div>
     </main>
   );
