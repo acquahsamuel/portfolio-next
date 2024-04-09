@@ -69,6 +69,7 @@
 @layer base {
   * {
     @apply border-border;
+ 
   }
   body {
     @apply bg-background text-foreground;
@@ -79,7 +80,8 @@
 .main-container{
   /* background-color: rgb(15, 14, 14); */
   /* color: white; */
-  width: 1250px;
+  width: 950px;
+  background-color: ghostwhite;
   margin: 0 auto;
   height: 100vh;
   font-size: inherit;

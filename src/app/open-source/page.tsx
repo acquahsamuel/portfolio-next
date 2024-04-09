@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Header from "../../../components/header";
+import Header from "../../../components/navbar";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
  
@@ -16,10 +16,7 @@ export default function OpenSourcePage() {
 
              {/* <Link className={buttonVariants({ variant: "outline" })}>Click here</Link> */}
 
-
-            <Button  variant="outline" size="sm"> Login </Button>
-             
-
+ 
           </div>
 
           
