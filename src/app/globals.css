@@ -73,6 +73,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-color: rgb(250, 248, 248);
   }
 }
 
@@ -80,13 +81,17 @@
 .main-container{
   /* background-color: rgb(15, 14, 14); */
   /* color: white; */
-  width: 950px;
+  /* width: 850px; */
+  max-width: 728px;
   background-color: ghostwhite;
+  /* background-color: antiquewhite; */
   margin: 0 auto;
-  height: 100vh;
+  /* height: 100vh; */
   font-size: inherit;
+  height: 100%;
   padding: 2em;
-  /* overflow: scroll; */
+  border-left: 1px solid rgb(230, 227, 227);
+  border-right: 1px solid rgb(230, 227, 227);
 }
 
 

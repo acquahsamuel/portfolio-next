@@ -17,9 +17,7 @@ export default function OpenSourcePage() {
              {/* <Link className={buttonVariants({ variant: "outline" })}>Click here</Link> */}
 
  
-          </div>
-
-          
+          </div>  
     </main>
   );
 }
