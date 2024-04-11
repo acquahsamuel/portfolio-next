@@ -8,7 +8,7 @@ export default function ProjectPage() {
         <Header />
         
         <div>
-          <h3 className="text-3xl"> Nice Stuff I've built </h3>
+          <h3 className="text-3xl"> Nice Stuff I have built </h3>
           <p> Side Hustles </p>
         </div>
 
