@@ -3,109 +3,58 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-
 export const EXPERIENCE = [
-    {
-        year: "2021 - Today",
-        role: "Senior Developer and VP of Product",
-        location_of_job: "London, UK",
-        job_description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde nam nulla labore dolorum vero nisi ipsum rerum quas perspiciatis eius ipsam quibusdam reprehenderit, Molestias repudiandae atque ipsa iusto ab maxime iure? Atque aut numquam qui nemo. Sit.",
-        company_logo: "company_logo_1.jpg"
-    },
-    {
-        year: "2021 - Today",
-        role: "Senior Developer and VP of Product",
-        location_of_job: "London, UK",
-        job_description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde nam nulla labore dolorum vero nisi ipsum rerum quas perspiciatis eius ipsam quibusdam reprehenderit, Molestias repudiandae atque ipsa iusto ab maxime iure? Atque aut numquam qui nemo. Sit.",
-        company_logo: "company_logo_1.jpg"
-
-    },
-    {
-        year: "2021 - Today",
-        role: "Senior Developer and VP of Product",
-        location_of_job: "London, UK",
-        job_description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde nam nulla labore dolorum vero nisi ipsum rerum quas perspiciatis eius ipsam quibusdam reprehenderit, Molestias repudiandae atque ipsa iusto ab maxime iure? Atque aut numquam qui nemo. Sit.",
-        company_logo: "company_logo_1.jpg"
-
-    }
-]
+  {
+    year: "2021 - Today",
+    role: "Frontend Engineer at Stanbic Bank Ghana",
+    location_of_job: "Ghana, Greater Accra",
+    job_description:"Building customer centric solution for business operation and growth. Refactoring and upgrade of internal tool for smooth operation and additional features",
+    company_logo: "company_logo_1.jpg",
+  },
+  {
+    year: "2021 - Today",
+    role: "Frontend Engineer at MyHealthCOP",
+    location_of_job: "Ghana, Remote",
+    job_description:" * Building customer centric solution for business operation and growth.  Refactoring and upgrade of internal tool for smooth operation and additional features",
+  },
+  {
+    year: "2021 - Today",
+    role: "Xardtek Technologies",
+    location_of_job: "London, UK",
+    job_description:"Building customer centric solution for business operation and growth.  Refactoring and upgrade of internal tool for , Refactoring and upgrade of internal tool for smooth operation and additional features",
+    company_logo: "company_logo_1.jpg",
+  },
+];
 
 export default function CardExperience() {
   const pathname = usePathname();
+
   return (
-    <div className={''}>
-
-
-
-        <div className="main_card flex my-8 bg-slate-100 rounded-lg p-10">
-
-             <div className="section_1 w-20">
-                   <img className="w-12 h-12 bg-cover bg-red-600 rounded-md" src="https://mir-s3-cdn-cf.behance.net/projects/404/c79fc5191735605.65d0904de9a03.png" alt="company_logo" />
-             </div>
-
-             <div className="section_2 mx-3">
-                 <div >
-                    <p className="text-sm text-gray-500 italic">  2021 - Today </p>
-                    <h3 className="font-bold"> Frontend Engineer at Stanbic Bank Ghana </h3>
-                    <p className="text-sm mb-2"> Ghana, Greater Accra </p>
-                 </div>
-
-                 <div>
-                    <p className="text-sm text-gray-500">  
-                        Building customer centric solution for business operation and growth <br />
-                        Refactoring and upgrade of internal tool for smooth operation and additional features 
-                       </p>
-                 </div>
+    <div>
+      {EXPERIENCE.map((exper, index) => (
+        <div   key={index} className="main_card flex my-8 bg-gray-100 leading-9 rounded-2xl p-6">
+          <div className="section_1 w-20">
+          <div className="flex items-center">
+            <div className="w-20">
+                <img className="h-16 w-16 rounded-full object-cover" src="data:image/jpeg;base64,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" alt="Avatar" />
+                <div className="absolute inset-0 rounded-full"></div>
             </div>
-        </div>
-
-
-        <div className="main_card flex bg-slate-100 p-10 my-4">
-           <div className="section_1 w-20 ">
-                   <img  className="w-10" src="https://media.licdn.com/dms/image/C4D0BAQGPkRhCyu_j5w/company-logo_200_200/0/1648750238279?e=2147483647&v=beta&t=cMhInQBJuYuLiH8oK6UVz2JbnFilXkJj9AAtemB6WX8" alt="company_logo" />
-             </div>
-
-             <div className="section_2 mx-3">
-                 <div >
-                    <p className="text-sm text-gray-500 italic">  2021 - Today </p>
-                    <h3  className="font-bold"> Frontend Engineer at MyHealthCOP  </h3>
-                    <p className="text-sm"> Ghana, Remote </p>
-                 </div>
-
-                 <div>
-                    <p className="text-sm text-gray-500">  
-                        Building customer centric solution for business operation and growth <br />
-                        Refactoring and upgrade of internal tool for smooth operation and additional features 
-                       </p>
-                 </div>
+           </div>
+          </div>
+            
+          <div className="section_2 mx-3">
+            <div>
+              <p className="text-sm text-gray-500 italic">{exper.year}</p>
+              <h3 className="font-bold">{exper.role}</h3>
+              <p className="text-sm font-light  mb-2">{exper.location_of_job}</p>
             </div>
-        </div>
 
-
-
-        <div className="main_card flex bg-slate-100 p-10">
-             <div className="section_1 w-20 ">
-                   <img  className="w-10" src="https://media.licdn.com/dms/image/C4D0BAQGPkRhCyu_j5w/company-logo_200_200/0/1648750238279?e=2147483647&v=beta&t=cMhInQBJuYuLiH8oK6UVz2JbnFilXkJj9AAtemB6WX8" alt="company_logo" />
-             </div>
-
-             <div className="section_2 mx-3">
-                 <div >
-                    <p className="text-sm text-gray-500 italic">  2021 - Today </p>
-                    <h3 className="font-bold"> Xardtek Technologies  </h3>
-                    <p> London, UK </p>
-                 </div>
-
-                 <div>
-                    <p className="text-sm text-gray-500">  
-                        Building customer centric solution for business operation and growth <br />
-                        Refactoring and upgrade of internal tool for smooth operation and additional features 
-                       </p>
-                 </div>
+            <div>
+            <p className="text-sm text-gray-700 leading-5 font-extralight">{exper.job_description}</p>
             </div>
+          </div>
         </div>
-
-
-
+      ))}
     </div>
   );
 }

@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Script from 'next/script';
 // import  HomePage  from "@/app/home/page";
 import Header from "../../components/navbar";
 import CardExperience from "../../components/card";
 import CardWithOverlay from "../../components/cardWithOverlay";
 import NewsLetter from "../../components/newLetter";
+import ArticlePage from "./articles/page";
 
 export default function Home() {
   return (
@@ -40,17 +42,14 @@ export default function Home() {
                 <div className="img_3"> 
                 <img className="w-25 h-25 rounded-lg -skew-y-3 shadow-md hover:skew-y-0 transition-transform duration-300 ease-in-out" src="https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img-src"   />
                  </div>
-
-
              </div>
 
 
-              
               <div className="my-20">
                   <div  className="my-5">
                     <h3 className="font-semibold"> Experience </h3>
                   </div>
-                 <CardExperience/>
+                 <CardExperience  />
               </div>
 
 
@@ -62,28 +61,26 @@ export default function Home() {
                 <CardWithOverlay />
               </div>
             
-
-
-
+ 
 
               <div className="my-20">
                   <div  className="my-5">
                     <h3 className="font-semibold"> Articles  </h3>
                   </div>
-                 <CardExperience/>
+                 {/* <CardExperience/> */}
+                  <ArticlePage />
               </div>
 
 
 
-              <div className="my-20">
-                  <div  className="my-5">
-                    <h3 className="font-semibold"> Lets Connect   </h3>
+              {/* <div className="my-20">
+              <div  className="my-5">
+                    <p className="paragraph">Subscribe to our newsletters</p>
+                    <Script async data-uid="0d5acdbea5" src="https://samuel-acquah.ck.page/0d5acdbea5/index.js"/>
                   </div>
-                  <NewsLetter />
-              </div>
-
-
+              </div> */}
           </div>
     </main>
   );
 }
+

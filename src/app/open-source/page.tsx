@@ -12,11 +12,7 @@ export default function OpenSourcePage() {
              <div>
                 <p> Built with nextjs / open-source</p>
              </div>
-
-
              {/* <Link className={buttonVariants({ variant: "outline" })}>Click here</Link> */}
-
- 
           </div>  
     </main>
   );
