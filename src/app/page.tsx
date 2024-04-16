@@ -38,17 +38,33 @@ export const SIDEHUSTLE = [
     short_note: "Trenda a hybridized model of ecommerce and marketplace for sellers and business  within Africa",
   },
   {
-    logo_url: "https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    logo_url: "https://tunis-next.netlify.app/assets/img/blog/blog-post-4.jpg",
     blog_title: "Blonder css framework",
     short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
     tags : ["Startup", "Node.js", "Angular", "MongoDB" , "API Development" ,  "SEO"]
   },
   {
-    logo_url: "https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    logo_url: "https://tunis-next.netlify.app/assets/img/blog/blog-post-3.jpg",
     blog_title: "Blonder VSCode theme",
     tags : ["Startup", "Node.js", "Angular", "MongoDB" , "API Development" ,  "SEO"],
     short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
-  } 
+  },
+  {
+    logo_url:
+      "https://tunis-next.netlify.app/assets/img/blog/blog-post-1.jpg",
+    blog_title: "Learn Frontend Cohort Web",
+    tags: [
+      "Open-source",
+      "HTML",
+      "CSS",
+      "SaSS",
+      "Github",
+      "Deployment",
+      "Documentation",
+    ],
+    short_note:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+  },
 ];
 
 

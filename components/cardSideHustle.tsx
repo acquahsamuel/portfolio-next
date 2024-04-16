@@ -11,12 +11,11 @@ interface CardProps {
     tags: string[];
 }
 
- 
 export default function CardSideHustle({ logo_url, project_title, project_description ,tags} : CardProps) {
   const pathname = usePathname();
   return (
     <div>
-      <div className="main_card my-2 bg-slate-100 rounded-lg p-5">
+      <div className="main_card my-2 bg-gray-100 rounded-lg p-5">
         <div className="section_2 mx-3">
           <div>
             <div className="w-20">
@@ -28,7 +27,7 @@ export default function CardSideHustle({ logo_url, project_title, project_descri
              
             <div className="flex flex-wrap">
               {tags && tags.map((tag, index) => (
-                <span key={index} className="bg-green-100 text-green-800 text-xs font-medium me-2 mb-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">
+                <span key={index} className="text-teal-800 text-xs font-medium me-2 mb-2 px-2.5 rounded-full dark:bg-gray-900  border">
                   {tag}
                 </span>
               ))}

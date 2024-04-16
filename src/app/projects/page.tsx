@@ -1,108 +1,128 @@
 import Image from "next/image";
 import Header from "../../../components/navbar";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import CardSideHustle from "../../../components/cardSideHustle";
 
-
-export const SIDEPROJECTS = [
+export const OPENSOURCE_PROJECTS = [
   {
-    source: "medium.com",
-    blog_title: "Building open source css framework",
-    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+    logo_url:
+      "https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    blog_title: "Trenda",
+    tags: [
+      "Startup",
+      "Node.js",
+      "Angular",
+      "MongoDB",
+      "Express",
+      "API Development",
+      "Email Templates",
+    ],
+    project_reference_url: "",
+    short_note:
+      "Trenda a hybridized model of ecommerce and marketplace for sellers and business  within Africa",
   },
   {
-    source: "medium.com",
-    blog_title: "Creating vscode theme",
-    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+    logo_url:
+      "https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    blog_title: "Blonder css framework",
+    tags: [
+      "Open-source",
+      "SaSS",
+      "Architecture",
+      "NPM Package",
+      "In-progress",
+      "Documentation",
+      "Optimization and bundling",
+    ],
+    short_note:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
   },
   {
-    source: "medium.com",
-    blog_title: "Creating vscode theme",
-    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur adipisicing elit. Odio, tenetur?",
+    logo_url:
+      "https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    blog_title: "Blonder VSCode theme",
+    tags: ["Open-source", "Azure", "Documentation"],
+    short_note:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+  },
+  {
+    logo_url:
+      "https://tunis-next.netlify.app/assets/img/blog/blog-post-2.jpg",
+    blog_title: "Ghana Cities with Regions API (v1)",
+    tags: [
+      "Open-source",
+      "Heroku",
+      "Nodejs",
+      "Mongodb",
+      "Github",
+      "Deployment",
+      "Documentation",
+    ],
+    short_note:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+  },
+  {
+    logo_url:
+      "https://tunis-next.netlify.app/assets/img/blog/blog-post-1.jpg",
+    blog_title: "Learn Frontend Cohort Web",
+    tags: [
+      "Open-source",
+      "HTML",
+      "CSS",
+      "SaSS",
+      "Github",
+      "Deployment",
+      "Documentation",
+    ],
+    short_note:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
   },
 ];
 
 
+export const TECH_STACK = [{
+    frontend : "",
+    backend : "",
+    testing : "",
+    architecture : "",
+    framework : ""
+  }
+]
 
-export default function ProjectPage() {
+
+
+export default function OpenSourcePage() {
   return (
     <main>
       <div className="main-container">
         <Header />
-        
-        <div>
-          <h3 className="text-3xl"> Nice Stuff I have built </h3>
-          <p> Side Hustles </p>
+
+         <div>
+          <div className="my-5">
+            <h3 className="font-semibold">  Tech Stack  </h3>
+             
+          </div>
+         </div>
+
+
+        <div className="">
+          <div className="my-5">
+            <h3 className="font-semibold"> Open Source Tool </h3>
+          </div>
+
+          <div className="grid grid-cols-2 gap-2">
+            {OPENSOURCE_PROJECTS.map((articles, index) => (
+              <CardSideHustle
+                key={index}
+                logo_url={articles.logo_url}
+                project_title={articles.blog_title}
+                project_description={articles.short_note}
+                tags={articles.tags}
+              />
+            ))}
+          </div>
         </div>
-
-        <div>
-
-
-       <div className="flex">
-
-
-          <div className="card_desx  border border-sky-500 rounded-md ">
-            <div className="flex">
-              <span className="tag"> Open-source </span>
-              <span> logo mini </span>
-            </div>
-
-            <div>
-              <h4> Container Tinkering </h4>
-              <p> Solution for runing containers locally and remotely</p>
-            </div>
-          </div>
-
-
-          <div className="card_desx   border border-sky-500 rounded-md ">
-            <div className="flex">
-              <span className="tag"> Open-source </span>
-              <span> logo mini </span>
-            </div>
-
-            <div>
-              <h4> Container Tinkering </h4>
-              <p> Solution for runing containers locally and remotely</p>
-            </div>
-          </div>
-
-          </div>
-
-
-
-        </div>
-
-
-
-
-        <div className="client_project">
-
-              <div>
-                <h2> Client Projects </h2>
-              </div>
-
-
-
-          <div className="card_desx   border border-sky-500 rounded-md ">
-            <div className="flex">
-              <span className="tag"> Open-source </span>
-              <span> logo mini </span>
-            </div>
-
-            <div>
-              <h4> Container Tinkering </h4>
-              <p> Solution for runing containers locally and remotely</p>
-            </div>
-          </div>
-
-
-
-        </div>
-
-
-
-
-
-
-
       </div>
     </main>
   );
