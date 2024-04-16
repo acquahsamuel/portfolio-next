@@ -2,12 +2,13 @@ import Image from "next/image";
 import Script from "next/script";
 // import  HomePage  from "@/app/home/page";
 import Header from "../../components/navbar";
-import CardExperience from "../../components/card";
+import CardExperience from "../../components/cardExperience";
 import CardWithOverlay from "../../components/cardWithOverlay";
 import NewsLetter from "../../components/newLetter";
 import ArticlePage from "./articles/page";
 import Footer from "../../components/footer";
 import CardShort from "../../components/cardShort";
+import CardSideHustle from "../../components/cardSideHustle";
 
 
 
@@ -28,6 +29,28 @@ export const ARTICLES = [
     short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur adipisicing elit. Odio, tenetur?",
   },
 ];
+
+export const SIDEHUSTLE = [
+  {
+    logo_url: "https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    blog_title: "Trenda",
+    tags : ["Startup", "Node.js", "Angular", "MongoDB" , "API Development" ,  "SEO"],
+    short_note: "Trenda a hybridized model of ecommerce and marketplace for sellers and business  within Africa",
+  },
+  {
+    logo_url: "https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    blog_title: "Blonder css framework",
+    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+    tags : ["Startup", "Node.js", "Angular", "MongoDB" , "API Development" ,  "SEO"]
+  },
+  {
+    logo_url: "https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    blog_title: "Blonder VSCode theme",
+    tags : ["Startup", "Node.js", "Angular", "MongoDB" , "API Development" ,  "SEO"],
+    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+  } 
+];
+
 
 export default function Home() {
   return (
@@ -92,12 +115,33 @@ export default function Home() {
         </div>
 
 
+    
+
+        <div className="my-20">
+          <div className="my-5">
+            <h3 className="font-semibold"> Side Hustles </h3>
+          </div>
+
+          <div className="grid grid-cols-2 gap-2">
+            {SIDEHUSTLE.map((articles, index) => (
+              <CardSideHustle
+                key={index}
+                logo_url={articles.logo_url}
+                project_title={articles.blog_title}
+                project_description={articles.short_note}
+                tags={articles.tags}
+              />
+            ))}
+          </div>
+        </div>
+
+
         <div className="my-20">
           <div className="my-5">
             <h3 className="font-semibold"> Articles </h3>
           </div>
 
-          <div>
+          <div className="#">
             {ARTICLES.map((articles, index) => (
               <CardShort
                 key={index}
@@ -106,25 +150,6 @@ export default function Home() {
                 project_description={articles.short_note}
               />
             ))}
-          </div>
-        </div>
-
-
-
-        <div className="my-20">
-          <div className="my-5">
-            <h3 className="font-semibold"> Side Hustles </h3>
-          </div>
-
-          <div>
-            {/* {ARTICLES.map((articles, index) => (
-              <CardShort
-                key={index}
-                logo_url={articles.source}
-                project_title={articles.blog_title}
-                project_description={articles.short_note}
-              />
-            ))} */}
           </div>
         </div>
 

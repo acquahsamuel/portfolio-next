@@ -32,7 +32,7 @@ export default function CardExperience() {
   return (
     <div>
       {EXPERIENCE.map((exper, index) => (
-        <div   key={index} className="main_card flex my-8 bg-gray-100 leading-9 rounded-2xl p-6">
+        <div   key={index} className={`main_card flex my-8 ${index % 2 === 0 ? 'bg-gray-100' : ''} leading-9 rounded-2xl p-6`}>
           <div className="section_1 w-20">
           <div className="flex items-center">
             <div className="w-20">
@@ -58,3 +58,4 @@ export default function CardExperience() {
     </div>
   );
 }
+

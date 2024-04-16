@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Header from "../../../components/navbar";
 import Head from "next/head";
-import CardExperience from "../../../components/card";
+import CardExperience from "../../../components/cardExperience";
 import CardShort from "../../../components/cardShort";
 
 export const ARTICLES = [
