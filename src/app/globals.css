@@ -94,6 +94,7 @@
   font-size: inherit;
   height: 100%;
   padding: 2em;
+  min-height: 100vh;
   background: rgb(255, 249, 249);
   border-left: 1px solid rgb(230, 227, 227);
   border-right: 1px solid rgb(230, 227, 227);
