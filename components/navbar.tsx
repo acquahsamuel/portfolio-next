@@ -10,7 +10,7 @@ export default function Navbar() {
       <ul className="flex">
         <li className="mr-3"> <Link className={pathname === "/" ? "active" : ""} href="/" data-name="profile"> Profile </Link> </li>
         <li className="mr-2"> <Link className={pathname === "/articles" ? "active" : ""} href="/articles" data-name="articles"> Articles </Link> </li>
-        <li className="mr-3"> <Link className={pathname === "/projects" ? "active" : ""} href="/open-source" data-name="open-source">  Project and Tools </Link> </li>
+        <li className="mr-3"> <Link className={pathname === "/projects" ? "active" : ""} href="/open-source" data-name="open-source">Project & Tools</Link> </li>
       </ul>
     </div>
   );

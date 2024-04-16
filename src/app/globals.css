@@ -103,6 +103,13 @@
 
 
 .active {
-  color: teal;
-  text-decoration: underline;
+  background: rgb(0, 14, 12);
+  padding: 3px 10px;
+  color: white;
+
+  &:hover{
+    cursor: pointer;
+  
+  }
+
 }
