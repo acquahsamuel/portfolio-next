@@ -80,7 +80,7 @@ import CardSideHustle from "../../../components/cardSideHustle";
 ];
 
 
-export const TECH_STACK = [{
+ const TECH_STACK = [{
     frontend : "",
     backend : "",
     testing : "",
