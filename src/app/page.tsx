@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Script from "next/script";
-// import  HomePage  from "@/app/home/page";
 import Header from "../../components/navbar";
 import CardExperience from "../../components/cardExperience";
 import CardWithOverlay from "../../components/cardWithOverlay";
@@ -50,8 +49,7 @@ export const SIDEHUSTLE = [
     short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
   },
   {
-    logo_url:
-      "https://tunis-next.netlify.app/assets/img/blog/blog-post-1.jpg",
+    logo_url: "https://tunis-next.netlify.app/assets/img/blog/blog-post-1.jpg",
     blog_title: "Learn Frontend Cohort Web",
     tags: [
       "Open-source",
@@ -62,8 +60,7 @@ export const SIDEHUSTLE = [
       "Deployment",
       "Documentation",
     ],
-    short_note:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
   },
 ];
 
@@ -76,7 +73,7 @@ export default function Home() {
 
         <div className="text-center py-12">
           <div className="profile">
-            <img src="" alt="" />
+            {/* <img src="" alt="" /> */}
             <h3 className="text-xl font-semibold"> Samuel Acquah </h3>
 
             <p className="text-sm my-2">
@@ -94,6 +91,7 @@ export default function Home() {
 
         <div className="project_slider flex">
           <div className="img_1 mr-3">
+
             <Image
               width={100}
               height={100}
@@ -102,6 +100,7 @@ export default function Home() {
               alt={`bg-img`}
             />
           </div>
+
 
           <div className="img_2 mr-3">
             <Image
