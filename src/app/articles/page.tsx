@@ -4,7 +4,7 @@ import Head from "next/head";
 import CardExperience from "../../../components/cardExperience";
 import CardShort from "../../../components/cardShort";
 
-export const ARTICLES = [
+const ARTICLES = [
   {
     source: "medium.com",
     blog_title: "Building open source css framework",
