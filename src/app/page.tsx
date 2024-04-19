@@ -32,7 +32,7 @@ export const ARTICLES = [
 
 export const SIDEHUSTLE = [
   {
-    logo_url: "https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    logo_url: "https://tunis-next.netlify.app/assets/img/blog/blog-post-5.jpg",
     blog_title: "Trenda",
     tags : ["Startup", "Node.js", "Angular", "MongoDB" , "API Development" ,  "SEO"],
     short_note: "Trenda a hybridized model of ecommerce and marketplace for sellers and business  within Africa",
