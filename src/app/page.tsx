@@ -9,22 +9,24 @@ import Footer from "../../components/footer";
 import CardShort from "../../components/cardShort";
 import CardSideHustle from "../../components/cardSideHustle";
 
-
 export const ARTICLES = [
   {
     source: "medium.com",
     blog_title: "Building open source css framework",
-    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+    short_note:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
   },
   {
     source: "medium.com",
     blog_title: "Creating vscode theme",
-    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+    short_note:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
   },
   {
     source: "medium.com",
     blog_title: "Creating vscode theme",
-    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur adipisicing elit. Odio, tenetur?",
+    short_note:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur adipisicing elit. Odio, tenetur?",
   },
 ];
 
@@ -32,20 +34,44 @@ export const SIDEHUSTLE = [
   {
     logo_url: "https://tunis-next.netlify.app/assets/img/blog/blog-post-5.jpg",
     blog_title: "Trenda",
-    tags : ["Startup", "Node.js", "Angular", "MongoDB" , "API Development" ,  "SEO"],
-    short_note: "Trenda a hybridized model of ecommerce and marketplace for sellers and business  within Africa",
+    tags: [
+      "Startup",
+      "Node.js",
+      "Angular",
+      "MongoDB",
+      "API Development",
+      "SEO",
+    ],
+    short_note:
+      "Trenda a hybridized model of ecommerce and marketplace for sellers and business  within Africa",
   },
   {
     logo_url: "https://tunis-next.netlify.app/assets/img/blog/blog-post-4.jpg",
     blog_title: "Blonder css framework",
-    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
-    tags : ["Startup", "Node.js", "Angular", "MongoDB" , "API Development" ,  "SEO"]
+    short_note:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+    tags: [
+      "Startup",
+      "Node.js",
+      "Angular",
+      "MongoDB",
+      "API Development",
+      "SEO",
+    ],
   },
   {
     logo_url: "https://tunis-next.netlify.app/assets/img/blog/blog-post-3.jpg",
     blog_title: "Blonder VSCode theme",
-    tags : ["Startup", "Node.js", "Angular", "MongoDB" , "API Development" ,  "SEO"],
-    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+    tags: [
+      "Startup",
+      "Node.js",
+      "Angular",
+      "MongoDB",
+      "API Development",
+      "SEO",
+    ],
+    short_note:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
   },
   {
     logo_url: "https://tunis-next.netlify.app/assets/img/blog/blog-post-1.jpg",
@@ -59,10 +85,10 @@ export const SIDEHUSTLE = [
       "Deployment",
       "Documentation",
     ],
-    short_note: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
+    short_note:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
   },
 ];
-
 
 export default function Home() {
   return (
@@ -72,7 +98,6 @@ export default function Home() {
 
         <div className="text-center py-12">
           <div className="profile">
-          
             <h3 className="text-xl font-semibold"> Samuel Acquah </h3>
             <p className="text-sm my-2">
               Software Engineer | .ts.+.js | Building Startups | Dev Tools |
@@ -81,16 +106,13 @@ export default function Home() {
           </div>
 
           <div className="my-3">
-            <button className="rounded-full bg-black text-white px-5 py-2 text-sm">  Available For Work
+            <button className="rounded-full bg-black text-white px-5 py-2 text-sm">
+              Available For Work
             </button>
           </div>
         </div>
 
-
         <div className="project_slider flex">
-
-
-
           <div className="img_1 mr-3">
             <img
               className="w-25 h-25 rounded-lg -skew-y-3 shadow-md hover:skew-y-0 transition-transform duration-300 ease-in-out"
@@ -99,16 +121,13 @@ export default function Home() {
             />
           </div>
 
-
           <div className="img_2 mr-3">
             <img
-             
               className="w-25 h-25 rounded-lg skew-y-3 shadow-md hover:skew-y-0 transition-transform duration-300 ease-in-out"
               src="https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="bg-img"
             />
           </div>
-
 
           <div className="img_3">
             <img
@@ -117,7 +136,6 @@ export default function Home() {
               alt="bg-img"
             />
           </div>
-
         </div>
 
         <div className="my-20">
@@ -134,15 +152,12 @@ export default function Home() {
           <CardWithOverlay />
         </div>
 
-
-
         <div className="my-20">
           <div className="my-5">
             <h3 className="font-semibold"> Articles </h3>
           </div>
 
-
-          <div className="#">
+          <div>
             {ARTICLES.map((articles, index) => (
               <CardShort
                 key={index}
@@ -153,8 +168,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-    
-
 
         <div className="my-20">
           <div className="my-5">
@@ -174,8 +187,6 @@ export default function Home() {
           </div>
         </div>
 
-
-
         <div className="my-5">
           <div className="my-5">
             <h3 className="font-semibold">Let's Connect </h3>
@@ -183,12 +194,9 @@ export default function Home() {
           <NewsLetter />
         </div>
 
-
-
         <div className="my-2">
           <Footer />
         </div>
-
       </div>
     </main>
   );
