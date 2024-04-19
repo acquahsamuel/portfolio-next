@@ -103,13 +103,12 @@
 
 
 .active {
-  background: rgb(0, 14, 12);
+  /* background: rgb(0, 14, 12); */
   padding: 3px 10px;
-  color: white;
+  /* color: white; */
 
   &:hover{
     cursor: pointer;
   
   }
-
 }

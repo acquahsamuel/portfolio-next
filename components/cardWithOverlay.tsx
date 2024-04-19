@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from 'next/image';
 import { usePathname } from "next/navigation";
 
 export const TUTORIAL = [
@@ -30,6 +31,8 @@ export const TUTORIAL = [
   },
 ];
 
+
+
 export default function CardWithOverlay() {
   const pathname = usePathname();
   return (
@@ -38,9 +41,11 @@ export default function CardWithOverlay() {
 
         <div key={index} className="basis-1/5 w-full">
             <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40">
-              <img
+              <Image
                 src={tutorial.background_url}
-                alt="University of Southern California"
+                alt={tutorial.background_url}
+                width={100}
+                height={100}
                 className="absolute inset-0 h-full w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>

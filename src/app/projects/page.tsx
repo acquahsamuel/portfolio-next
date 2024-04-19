@@ -63,8 +63,7 @@ export const OPENSOURCE_PROJECTS = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, tenetur?",
   },
   {
-    logo_url:
-      "https://tunis-next.netlify.app/assets/img/blog/blog-post-1.jpg",
+    logo_url: "https://tunis-next.netlify.app/assets/img/blog/blog-post-1.jpg",
     blog_title: "Learn Frontend Cohort Web",
     tags: [
       "Open-source",

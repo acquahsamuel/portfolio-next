@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import Image from 'next/image';
 
 interface CardProps {
     logo_url: string;
@@ -19,7 +19,7 @@ export default function CardSideHustle({ logo_url, project_title, project_descri
         <div className="section_2 mx-3">
           <div>
             <div className="w-20">
-                <img  src={logo_url} className="h-12 w-12 rounded-full object-cover" />
+                <Image  width={100}  height={100} alt={project_title}  src={logo_url} className=" w-12 h-12 rounded-full object-cover" />
                 <div className="absolute inset-0 rounded-full"></div>
             </div>
             <h3 className="font-bold"> {project_title} </h3>
