@@ -72,7 +72,7 @@ export default function Home() {
 
         <div className="text-center py-12">
           <div className="profile">
-            {/* <img src="" alt="" /> */}
+          
             <h3 className="text-xl font-semibold"> Samuel Acquah </h3>
             <p className="text-sm my-2">
               Software Engineer | .ts.+.js | Building Startups | Dev Tools |
@@ -95,7 +95,7 @@ export default function Home() {
             <img
               className="w-25 h-25 rounded-lg -skew-y-3 shadow-md hover:skew-y-0 transition-transform duration-300 ease-in-out"
               src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt={`bg-img`}
+              alt="bg-img"
             />
           </div>
 
@@ -105,7 +105,7 @@ export default function Home() {
              
               className="w-25 h-25 rounded-lg skew-y-3 shadow-md hover:skew-y-0 transition-transform duration-300 ease-in-out"
               src="https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt={`bg-img`}
+              alt="bg-img"
             />
           </div>
 
@@ -114,14 +114,10 @@ export default function Home() {
             <img
               className="w-25 h-25 rounded-lg -skew-y-3 shadow-md hover:skew-y-0 transition-transform duration-300 ease-in-out"
               src="https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt={`bg-img`}
+              alt="bg-img"
             />
           </div>
 
-      
-
-
-          
         </div>
 
         <div className="my-20">
