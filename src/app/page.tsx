@@ -9,7 +9,7 @@ import Footer from "../../components/footer";
 import CardShort from "../../components/cardShort";
 import CardSideHustle from "../../components/cardSideHustle";
 
-export const ARTICLES = [
+ const ARTICLES = [
   {
     source: "medium.com",
     blog_title: "Building open source css framework",
@@ -30,7 +30,7 @@ export const ARTICLES = [
   },
 ];
 
-export const SIDEHUSTLE = [
+ const SIDEHUSTLE = [
   {
     logo_url: "https://tunis-next.netlify.app/assets/img/blog/blog-post-5.jpg",
     blog_title: "Trenda",
