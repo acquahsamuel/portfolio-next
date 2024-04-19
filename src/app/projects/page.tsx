@@ -92,6 +92,10 @@ export const TECH_STACK = [{
 
 
 
+
+// There is no better tommorrow without the risk and investment of now 
+
+
 export default function OpenSourcePage() {
   return (
     <main>

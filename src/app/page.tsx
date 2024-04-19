@@ -91,6 +91,7 @@ export default function Home() {
           </div>
         </div>
 
+
         <div className="project_slider flex">
           <div className="img_1 mr-3">
             <img
@@ -107,6 +108,7 @@ export default function Home() {
               alt="img-src"
             />
           </div>
+
           <div className="img_3">
             <img
               className="w-25 h-25 rounded-lg -skew-y-3 shadow-md hover:skew-y-0 transition-transform duration-300 ease-in-out"
@@ -114,6 +116,8 @@ export default function Home() {
               alt="img-src"
             />
           </div>
+
+          
         </div>
 
         <div className="my-20">
@@ -131,7 +135,26 @@ export default function Home() {
         </div>
 
 
+
+        <div className="my-20">
+          <div className="my-5">
+            <h3 className="font-semibold"> Articles </h3>
+          </div>
+
+
+          <div className="#">
+            {ARTICLES.map((articles, index) => (
+              <CardShort
+                key={index}
+                logo_url={articles.source}
+                project_title={articles.blog_title}
+                project_description={articles.short_note}
+              />
+            ))}
+          </div>
+        </div>
     
+
 
         <div className="my-20">
           <div className="my-5">
@@ -152,25 +175,6 @@ export default function Home() {
         </div>
 
 
-        <div className="my-20">
-          <div className="my-5">
-            <h3 className="font-semibold"> Articles </h3>
-          </div>
-
-          <div className="#">
-            {ARTICLES.map((articles, index) => (
-              <CardShort
-                key={index}
-                logo_url={articles.source}
-                project_title={articles.blog_title}
-                project_description={articles.short_note}
-              />
-            ))}
-          </div>
-        </div>
-
-
-
 
         <div className="my-5">
           <div className="my-5">
@@ -184,6 +188,7 @@ export default function Home() {
         <div className="my-2">
           <Footer />
         </div>
+
       </div>
     </main>
   );
