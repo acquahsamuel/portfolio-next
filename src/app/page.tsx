@@ -189,7 +189,7 @@ export default function Home() {
 
         <div className="my-5">
           <div className="my-5">
-            <h3 className="font-semibold">Let's Connect </h3>
+            <h3 className="font-semibold">Let us Connect </h3>
           </div>
           <NewsLetter />
         </div>
