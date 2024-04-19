@@ -31,8 +31,6 @@ export const TUTORIAL = [
   },
 ];
 
-
-
 export default function CardWithOverlay() {
   const pathname = usePathname();
   return (

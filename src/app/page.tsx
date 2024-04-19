@@ -10,7 +10,6 @@ import CardShort from "../../components/cardShort";
 import CardSideHustle from "../../components/cardSideHustle";
 
 
-
 export const ARTICLES = [
   {
     source: "medium.com",
@@ -75,7 +74,6 @@ export default function Home() {
           <div className="profile">
             {/* <img src="" alt="" /> */}
             <h3 className="text-xl font-semibold"> Samuel Acquah </h3>
-
             <p className="text-sm my-2">
               Software Engineer | .ts.+.js | Building Startups | Dev Tools |
               Opensource | Innovation | Growth
@@ -90,38 +88,38 @@ export default function Home() {
 
 
         <div className="project_slider flex">
-          <div className="img_1 mr-3">
 
-            <Image
-              width={100}
-              height={100}
+
+
+          <div className="img_1 mr-3">
+            <img
               className="w-25 h-25 rounded-lg -skew-y-3 shadow-md hover:skew-y-0 transition-transform duration-300 ease-in-out"
-              src={`https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
+              src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt={`bg-img`}
             />
           </div>
 
 
           <div className="img_2 mr-3">
-            <Image
-              width={100}
-              height={100}
+            <img
+             
               className="w-25 h-25 rounded-lg skew-y-3 shadow-md hover:skew-y-0 transition-transform duration-300 ease-in-out"
-              src={`https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
+              src="https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt={`bg-img`}
             />
           </div>
 
 
           <div className="img_3">
-            <Image
-               width={100}
-               height={100}
+            <img
               className="w-25 h-25 rounded-lg -skew-y-3 shadow-md hover:skew-y-0 transition-transform duration-300 ease-in-out"
-              src={`https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
+              src="https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt={`bg-img`}
             />
           </div>
+
+      
+
 
           
         </div>
